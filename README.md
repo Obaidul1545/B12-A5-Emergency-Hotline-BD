@@ -31,7 +31,7 @@ Bubbling হলো DOM এর একটি system । কোন element কে c
 element কে event চালাতে পারি । এর সুবিধা হল সব গুলা child কে আলাদা event চালাতে
 হয় না । নতুন child add হলেও এটা কাজ করে ।
 
-What is the difference between preventDefault() and stopPropagation() methods?
+5 What is the difference between preventDefault() and stopPropagation() methods?
 
 preventDefault() হলো form এর Default behavior button click করলে রে reload নেওয়া
 বন্ধ করা।
