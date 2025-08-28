@@ -49,3 +49,18 @@ document
     const callHistory = document.getElementById('calling-history');
     callHistory.innerText = '';
   });
+
+// clicking copy button functionality
+const navShowcopyNumber = document.getElementById('show-copy-number');
+const copyBtns = document.getElementsByClassName('copy-btn');
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener('click', function () {
+    const copiedNumber = copyBtn.parentNode.parentNode.children[3].innerText;
+    navigator.clipboard.writeText(copiedNumber);
+    alert(`নাম্বার কপি হয়েছে : ${copiedNumber}`);
+    let copyCount = Number(navShowcopyNumber.innerText);
+    copyCount++;
+    console.log(copyCount);
+    navShowcopyNumber.innerText = copyCount;
+  });
+}
