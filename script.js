@@ -30,11 +30,11 @@ for (const callBtn of callBtns) {
     const callHistory = document.getElementById('calling-history');
     const addHistoryContainer = document.createElement('div');
     addHistoryContainer.innerHTML = `
-    <div class="p-4 bg-[#fafafa] rounded-lg">
-              <p class="text-lg font-semibold text-black">${title}</p>
-              <div class="flex justify-between items-center">
-                <span class="text-base font-normal text-[#5C5C5C]">${callingNumber}</span>
-                <p class="text-base font-normal text-[#5C5C5C]">${date.toLocaleString()}</p>
+           <div class="p-4 md:p-2 lg:p-4 bg-[#fafafa] rounded-lg">
+              <p class="text-lg md:text-base md:text-center lg:text-left font-semibold text-black">${title}</p>
+              <div class="flex md:flex-col lg:flex-row gap-2 justify-between items-center">
+                <span class="text-base font-normal text-[#5C5C5C] flex-1 md:flex-col lg:flex-row">${callingNumber}</span>
+                <p class="text-base font-normal text-[#5C5C5C] flex-1 md:text-center lg:text-right">${date.toLocaleString()}</p>
               </div>
             </div>
     `;
